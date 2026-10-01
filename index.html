@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bestie Magic ✨</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header -->
+        <header class="hero">
+            <div class="glow-avatar">💖</div>
+            <h1>A Special Message for My Bestie ✨</h1>
+            <p class="tagline">Bright, fun, and made just for you!</p>
+        </header>
+
+        <!-- Navigation Tabs -->
+        <nav class="nav-bar">
+            <button class="nav-btn active" onclick="showTab('surprise')">🎁 Surprise Button</button>
+            <button class="nav-btn" onclick="showTab('seeme')">📸 see my bestie</button>
+            <button class="nav-btn" onclick="showTab('memories')">🌸 Our Best Moments</button>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="content-panel">
+            
+            <!-- Surprise Section with Interactive Button -->
+            <section id="surprise-tab" class="tab-content active">
+                <h2>Click for Something Special!</h2>
+                <p class="sub-text">Just tap the heart below, I promise it's worth it! 💖</p>
+                
+                <div class="button-wrapper">
+                    <button class="magic-heart-btn" onclick="triggerMagic(event)">
+                        <span class="heart-icon">💖</span>
+                        <span class="btn-text">Click Me!</span>
+                    </button>
+                </div>
+            </section>
+
+            <!-- See Me Section -->
+            <section id="seeme-tab" class="tab-content">
+                <h2>See me ✨</h2>
+                <div class="photo-card">
+                    <div class="image-frame">
+                        <img src="yvonne wangui.jpeg" alt="Bestie Photo" id="bestie-photo">
+                    </div>
+                    <h3>Always Shining! 🌟</h3>
+                    <p>The standard of excellence, good vibes, and pure joy.</p>
+                </div>
+            </section>
+
+            <!-- Moments Section -->
+            <section id="memories-tab" class="tab-content">
+                <h2>Our Favorite Highlights</h2>
+                <div class="card-grid">
+                    <div class="card">
+                        <span class="card-emoji">🚀</span>
+                        <h3>Endless Laughs</h3>
+                        <p>From late night talks to hilarious inside jokes that never get old.</p>
+                    </div>
+                    <div class="card">
+                        <span class="card-emoji">💚</span>
+                        <h3>Sister For Life</h3>
+                        <p>Unmatched support, good energy, and true friendship every single day.</p>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
